@@ -523,9 +523,46 @@ header {
     flex-basis: 100%;
   }
 
-  .header-img img {
-    width: 200px;
+  .header-img {
+    display: inline-block; 
+    text-align: center; 
+    max-width: 220px; 
+    margin: auto; 
   }
+  
+  .profile-image {
+    width: 100%;
+    max-width: 200px; 
+   
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg, aqua, purple);
+    border-image-slice: 1;
+    animation: borderAnimation 5s linear infinite, pulseAnimation 2s ease-in-out infinite;
+    box-sizing: border-box; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      border-image-source: linear-gradient(45deg, aqua, purple);
+    }
+    100% {
+      border-image-source: linear-gradient(405deg, aqua, purple);
+    }
+  }
+  
+  @keyframes pulseAnimation {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+  }
+  
   .effects span:nth-child(2) {
     display: none;
   }
@@ -542,6 +579,10 @@ header {
   .portfolio-container {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: minmax(100px, auto);
+  }
+  .header-img{
+   
+    margin-top: 150px;
   }
   .portfolio {
     width: 300px;
