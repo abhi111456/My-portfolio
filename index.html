@@ -1,254 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>my portFolio</title>
-  </head>
-
-  <body>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <div class="pre-loader">
-      <i class="fas fa-spinner loader"></i>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="pre-loader">
+    <i class="fas fa-spinner loader"></i>
+  </div>
+  <button class="day">
+    <i class="fa-sharp fa-solid fa-code-compare"></i>
+  </button>
+  <button class="night">
+    <i class="fas fa-moon"></i>
+  </button>
+  <header>
+    <nav class="navbar">
+      <h1>
+        <a href="index.html" class="logo">Hii<span class="lio">there</span></a>
+      </h1>
+      <ul class="nav">
+        <li><a class="nav-btn1 active" href="#about">About</a></li>
+        <li><a class="nav-btn2" href="#skills">Skills</a></li>
+        <li><a class="nav-btn3" href="#portfolio">Projects</a></li>
+        <li><a class="nav-btn5" href="#contact">Contact</a></li>
+      </ul>
+      <i class="ham-btn fas fa-bars"></i>
+    </nav>
+    <div class="row sec-dis">
+      <div class="heading">
+        <h3 style="margin-bottom: 10px"><span style="color: aqua;">I'm</span></h3>
+        <h1>Abhishek<span style="padding-left: 10px;">Kumar</span></h1>
+        <h4><span style="color: aqua;">Frontend </span> Developer</h4>
+        <p>Hello, I am a Web developer.</p>
+        <button class="btnn">Hire Me</button>
+      </div>
+      <div class="header-img">
+        <img src="./assets/abhishek.jpg" alt="Abhishek Kumar" class="profile-image" />
+      </div>
     </div>
-    <button class="day">
-      <i class="fa-sharp fa-solid fa-code-compare"></i>
-    </button>
-    <button class="night"><i class="fas fa-moon"></i></button>
-    <header>
-      <nav class="navbar">
-        <h1>
-          <a href="index.html" class="logo"
-            >Hii<span class="lio">there</span></a
-          >
-        </h1>
-        <ul class="nav">
-          <li><a class="nav-btn1 active" href="#about">About</a></li>
-          <li><a class="nav-btn2" href="#skills">Skills</a></li>
-          <li><a class="nav-btn3" href="#portfolio">Projects</a></li>
-          <li><a class="nav-btn4" href="#services">Services</a></li>
-          <li><a class="nav-btn5" href="#contact">Contact-Us</a></li>
-        </ul>
-        <i class="ham-btn fas fa-bars"></i>
-      </nav>
-      <div class="row sec-dis">
-        <div class="heading">
-          <h3 style="margin-bottom: 10px">I'm</h3>
-          <h1>Abhishek<span>Kumar</span></h1>
-          <h4><span style="color: aqua;">Software</span> Developer</h4>
-          <p>
-            Hello, I am a full stack developer, designer and creative person.
-          </p>
-          <button class="btnn">Hire Me</button>
-        </div>
-        <div class="header-img">
-          <img src="./assets/abhishek.jpg" alt="Abhishek Kumar" class="profile-image" style=" border-radius: 10px; background-color: transparent;  filter: brightness(80%) contrast(90%);
-         
+    <div class="effects">
+      <span></span>
+      <span></span>
+    </div>
+  </header>
 
-          " />
+  <section id="about" class="section">
+    <h1 class="section-title">About Me</h1>
+    <p class="section-desc">Hi, I'm Abhishek Kumar, a Frontend Developer passionate about creating interactive and dynamic web applications.</p>
+  </section>
+
+  <section id="skills" class="section skills">
+    <h1 class="section-title">Skills</h1>
+    <div class="skill-container">
+      <div class="skill">
+        <i class="fas fa-code"></i>
+        <h3>HTML & CSS</h3>
+        <p>Expert in creating responsive and accessible web designs.</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-laptop-code"></i>
+        <h3>JavaScript</h3>
+        <p>Proficient in building interactive web applications using vanilla JavaScript and frameworks like React.js.</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-react"></i>
+        <h3>React</h3>
+        <p>Skilled in developing SPAs using React and managing state with Redux.</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-database"></i>
+        <h3>APIs</h3>
+        <p>Experienced in fetching and manipulating data from RESTful APIs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section portfolios">
+    <h1 class="section-title">Projects</h1>
+    <p class="section-desc">
+      Here are a few design projects I've worked on recently. Want to see more? <a href="mailto:ak0259421@gmail.com">Email me</a>.
+    </p>
+    <div class="portfolio-container">
+      <div class="portfolio">
+        <div class="img" style="background-image: url('./assets/a.png');"></div>
+        <div class="portfolio-content">
+          <h3>Movie App</h3>
+          <p>Entertainment movie app using React.js and Material UI, fetching data using the MovieDB API.</p>
+          <a href="https://entertainment-web-appp.netlify.app/" class="btn">View Website &#x0003E;</a>
         </div>
       </div>
-      <div class="effects">
-        <span></span>
-        <span></span>
+      <div class="portfolio">
+        <div class="img" style="background-image: url('./assets/b.png');"></div>
+        <div class="portfolio-content">
+          <h3>Disease Prediction</h3>
+          <p>Disease prediction using machine learning algorithms. to give based on symptoms</p>
+          <a href="https://github.com/abhi111456/Diseases-prediction" class="btn">View Website &#x0003E;</a>
+        </div>
       </div>
+      <div class="portfolio">
+        <div class="img" style="background-image: url('./assets/c.png');"></div>
+        <div class="portfolio-content">
+          <h3>Responsive Website</h3>
+          <p>Responsive and flexible website using React.js, fetching data using API.</p>
+          <a href="https://ecommersesitea.netlify.app/" class="btn">View Website &#x0003E;</a>
+        </div>
+      </div>
+      <div class="portfolio">
+        <div class="img" style="background-image: url('./assets/d.png');"></div>
+        <div class="portfolio-content">
+          <h3>Rock Paper Scissors Game</h3>
+          <p>Rock paper scissors game using HTML, CSS, and JavaScript with DOM manipulation.</p>
+          <a href="https://6662c6d14f07420008cbe06c--chic-chimera-0d3f46.netlify.app/" class="btn">View Website &#x0003E;</a>
+        </div>
+      </div>
+      <div class="portfolio">
+        <div class="img" style="background-image: url('./assets/e.png');"></div>
+        <div class="portfolio-content">
+          <h3>Age Calculator App</h3>
+          <p>Age calculator app using HTML, CSS, and JavaScript.</p>
+          <a href="https://stupendous-bombolone-c559e9.netlify.app/" class="btn">View Website &#x0003E;</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
 
-      <section class="section skills">
-        =
-        <h1 class="section-title">expertise</h1>
-        <p class="section-desc">
-          I have handfull experience in following skills and still learning and
-          practicing more and more.
-        </p>
-        <div class="skill-container">
-          <div class="skill">
-            <i class="fas fa-palette"></i>
-            <h1>designer</h1>
-            <p>
-              I value simple content structure, clean design patterns, and
-              thoughtful interactions.
-            </p>
-            <h3>Things I enjoy designing</h3>
-            <p>UX, UI, Web</p>
-            
-          </div>
-          <div class="skill">
-            <i class="fas fa-laptop-code"></i>
-            <h1>developer</h1>
-            <p>
-              I like to code things from scratch, and enjoy bringing ideas to
-              life in the browser.
-            </p>
-            <h3>Languages</h3>
-            <p>HTML, CSS, javascript,React.js,MUI</p>
-           
-          </div>
-          <div class="skill">
-            <i class="fas fa-code"></i>
-            <h1>Coder</h1>
-            <p>
-              I genuinely care about people, and love helping fellow designers
-              work on their craft.
-            </p>
-            <h3>Languages</h3>
-            <p>HTML, CSS,</p>
-           
-          </div>
-        </div>
-      </section>
-      <section class="section portfolios">
-        <h1 class="section-title">PROJECTS</h1>
-        <p class="section-desc">
-          Here are a few design projects I've worked on recently. Want to see
-          more? <a href="#">Email me:ak0259421@gmail.com</a>.
-        </p>
-        <div class="portfolio-container">
-          <div class="portfolio">
-            <div class="img">
-              <p class="portfolio-desc">
-                Entertainment movie app using react js and material ui fetch
-                data using moviedb.
-              </p>
-              <button class="btn">
-                <a href="https://entertainment-web-appp.netlify.app/"
-                  >View Website &#x0003E;</a
-                >
-              </button>
-            </div>
-          </div>
-          <div class="portfolio">
-            <div class="img pi2">
-              <p class="portfolio-desc">
-                Disease prediction using machine learning algorithm
-              </p>
-              <button class="btn">
-                <a href="https://github.com/abhi111456/Diseases-prediction"
-                  >View Website &#x0003E;</a
-                >
-              </button>
-            </div>
-          </div>
-          <div class="portfolio">
-            <div class="img pi3">
-              <p class="portfolio-desc">
-                Results-oriented, responsive and flexible website using react js
-                and fetch the data using api.
-              </p>
-              <button class="btn">
-                <a href="https://ecommersesitea.netlify.app/"
-                  >View Website &#x0003E;</a
-                >
-              </button>
-            </div>
-          </div>
-          <div class="portfolio">
-            <div class="img pi4">
-              <p class="portfolio-desc">
-                Rock papper scissor games using html and css and javascript
-                using dom manipulation.
-              </p>
-              <button class="btn">
-                <a
-                  href="https://6662c6d14f07420008cbe06c--chic-chimera-0d3f46.netlify.app/"
-                  >View Website &#x0003E;</a
-                >
-              </button>
-            </div>
-          </div>
-          <div class="portfolio">
-            <div class="img pi5">
-              <p class="portfolio-desc">
-                Create age calculator app using html ,css and javascript
-              </p>
-              <button class="btn">
-                <a href="https://stupendous-bombolone-c559e9.netlify.app/"
-                  >View Website &#x0003E;</a
-                >
-              </button>
-            </div>
-          </div>
-          <div class="portfolio">
-            <div class="img pi6">
-              <p class="portfolio-desc">dice game using react js</p>
-              <button class="btn">
-                <a href="https://dice-ggamee.netlify.app/"
-                  >View Website &#x0003E;</a
-                >
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section services">
-        <h1 class="section-title">Services</h1>
-        <p class="section-desc">
-          I'm a bit of a digital product junky. Over the years, I've used
-          hundreds of web and mobile apps in different industries and verticals.
-        </p>
-        <div class="services-container">
-          <div class="service">
-            <i class="fas fa-fast-forward"></i>
-            <h1>Fast</h1>
-            <p>
-              Fast load times and lag free interaction, my highest priority.
-            </p>
-          </div>
-          <div class="service">
-            <i class="fas fa-mobile-alt"></i>
-            <h1>Responsive</h1>
-            <p>My layouts will work on any device, big or small.</p>
-          </div>
-          <div class="service">
-            <i class="fas fa-lightbulb"></i>
-            <h1>Intuitive</h1>
-            <p>Strong preference for easy to use, intuitive UX/UI.</p>
-          </div>
-          <div class="service">
-            <i class="fas fa-rocket"></i>
-            <h1>Dynamic</h1>
-            <p>
-              Websites don't have to be static, I love making pages come to
-              life.
-            </p>
-          </div>
-          <div class="service">
-            <i class="fas fa-clock"></i>
-            <h1>on time</h1>
-            <p>Delivery on time with no issues and bugs.</p>
-          </div>
-          <div class="service">
-            <i class="fas fa-layer-group"></i>
-            <h1>Full-Stack</h1>
-            <p>Full-Stack developer anykind of front-end and back-end work</p>
-          </div>
-        </div>
-      </section>
-      <section class="section contact">
-        <h1 class="section-title">Contact</h1>
-        <p class="section-desc">
-          Have a question or want to work together? Contact me now or send a
-          email <a href="mailto:waseemaofficial@gmail.com">here</a>.
-        </p>
-        <div class="contact-container">
-          <form class="contact-form">
-            <input type="text" placeholder="Full Name" />
-            <input type="email" placeholder="Email Address" />
-            <input type="text" placeholder="Subject" />
-            <textarea name="message" placeholder="Message Here..."></textarea>
-            <button class="btn">Send</button>
-          </form>
-        </div>
-      </section>
-    </header>
-    <script src="script.js"></script>
-  </body>
+  <section id="contact" class="section contact">
+    <h1 class="section-title">Contact</h1>
+    <p class="section-desc">
+      Have a question or want to work together? Contact me now or send an email <a href="mailto:waseemaofficial@gmail.com">here</a>.
+    </p>
+    <div class="contact-container">
+      <form class="contact-form">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+        <input type="text" placeholder="Subject">
+        <textarea name="message" placeholder="Message Here..."></textarea>
+        <button class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
 </html>
